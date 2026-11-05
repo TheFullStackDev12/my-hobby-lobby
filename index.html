@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Creative Kitchen & Crafts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation Bar -->
+    <header>
+        <div class="logo">🧶 My Maker Space</div>
+        <nav>
+            <button class="filter-btn active" onclick="filterHobbies('all')">All Projects</button>
+            <button class="filter-btn" onclick="filterHobbies('crafts')">Yarn Crafts</button>
+            <button class="filter-btn" onclick="filterHobbies('kitchen')">In the Kitchen</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Handmade & Homecooked</h1>
+        <p>Welcome! This is where I share everything I loop with yarn and whip up in the kitchen.</p>
+    </section>
+
+    <!-- Hobbies Grid Section -->
+    <main class="hobby-container">
+        <!-- Crochet Card -->
+        <div class="hobby-card crafts">
+            <div class="hobby-icon">🧶</div>
+            <h3>Crochet</h3>
+            <p>From cozy amigurumi plushies to granny square blankets. There's something magical about turning a single strand of yarn into a finished piece with just a hook.</p>
+        </div>
+
+        <!-- Knitting Card -->
+        <div class="hobby-card crafts">
+            <div class="hobby-icon">🪡</div>
+            <h3>Knitting</h3>
+            <p>The rhythmic click of the needles. I love working on warm winter beanies, chunky scarves, and practice stitching complex cable patterns.</p>
+        </div>
+
+        <!-- Cooking Card -->
+        <div class="hobby-card kitchen">
+            <div class="hobby-icon">🍳</div>
+            <h3>Cooking</h3>
+            <p>Experimenting with fresh spices, trying out comfort food recipes, and making meals from scratch. Baking sweet treats or plating savory dinners is my favorite way to unwind.</p>
+        </div>
+    </main>
+
+    <!-- Interaction Zone -->
+    <section class="interaction-zone">
+        <h3>Drop a Heart!</h3>
+        <button id="like-button" onclick="incrementLikes()">❤️ Cheered!</button>
+        <p><span id="like-count">0</span> people love these creations.</p>
+    </section>
+
+    <footer>
+        <p>Made with HTML, CSS, & JavaScript | 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
